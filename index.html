@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TIME CAR</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#00027f">
+    <meta name="description" content="Epic NFT Marketplace UI Design Kit">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ui8">
+    <meta name="twitter:title" content="Crypter - NFT Marketplace UI Kit">
+    <meta name="twitter:description" content="Crypter - NFT Marketplace UI Kit">
+    <meta name="twitter:creator" content="@ui8">
+    <meta name="twitter:image" content="https://ui8-crypter-nft-html.herokuapp.com/img/twitter-card.png">
+    <meta property="og:title" content="Crypter - NFT Marketplace UI Kit">
+    <meta property="og:type" content="Article">
+    <meta property="og:url" content="https://ui8.net/ui8/products/crypter-nft-marketplace-ui-kit">
+    <meta property="og:image" content="https://ui8-crypter-nft-html.herokuapp.com/img/fb-og-image.png">
+    <meta property="og:description" content="Epic NFT Marketplace UI Design Kit">
+    <meta property="og:site_name" content="Crypter - NFT Marketplace UI Kit">
+    <meta property="fb:admins" content="132951670226590">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.min.css">
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+        if (screen.width < 375) {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        } else {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script>
+      console.log(localStorage.getItem('darkMode'));
+      if (localStorage.getItem('darkMode') === "on") {
+        document.body.classList.add("dark");
+        document.addEventListener("DOMContentLoaded", function() {
+          document.querySelector('.js-theme input').checked = true;
+        });
+      }
+    </script>
+    <!-- outer-->
+    <div class="outer">
+      <!-- header-->
+      <header class="header js-header" data-id="#header">
+        <div class="header__center center"><a class="header__logo" href="index.html"><img class="some-icon" src="img/logo-dark.png" alt="TIME CAR"><img class="some-icon-dark" src="img/logo-light.png" alt="TIME CAR"></a>
+          <div class="header__wrapper js-header-wrapper">
+            <nav class="header__nav"><a class="header__link" href="">Discover</a><a class="header__link" href="">How it works</a><a class="header__link" href="">Create item</a><a class="header__link" href="">Profile</a></nav>
+            <form class="header__search">
+              <input class="header__input" type="text" name="search" placeholder="Search" required>
+              <button class="header__result">
+                <svg class="icon icon-search">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </button>
+            </form><a class="button-small header__button" href="">Upload</a><a class="button-stroke button-small header__button header__connect" href="">Connect Wallet</a>
+          </div>
+          <div class="header__item header__item_notification js-header-item">
+            <button class="header__head js-header-head active">
+              <svg class="icon icon-notification">
+                <use xlink:href="#icon-notification"></use>
+              </svg>
+            </button>
+            <div class="header__body js-header-body">
+              <div class="header__title h4">Notification</div>
+            </div>
+          </div><a class="button-small header__button header__upload" href="">WhitePaper</a>
+<a class="button-stroke button-small header__button header__connect" href="">Connect Wallet</a>
+     
+        </div>
+      </header>
+      <div class="outer__inner">
+<div class="section description">
+      <div class="description__center center">
+            <div class="description__wrap">
+              <div class="description__stage">TIME CAR</div>
+              <h1 class="description__title h1">The First Game Metaverse</h1>
+              <div class="description__text">Autobots on Binance Smart Chain</div>
+              <div class="description__btns"><a class="button description__button" href="upload-variants.html">Create item</a><a class="button-stroke description__button" href="search01.html">Discover more</a></div>
+            </div>
+            <div class="description__gallery">
+              <div class="description__preview"><img class="some-icon" srcSet="img/wangye@2x.png 2x" src="img/wangye.png" alt="Cubes"><img class="some-icon-dark" srcSet="img/wangye@2x.png 2x" src="img/wangye.png" alt="Cubes"></div>
+            </div>
+          </div>
+        </div>
+        <div class="popup popup_connect mfp-hide" id="popup-connect">
+          <div class="popup__img">
+            <svg class="icon icon-wallet">
+              <use xlink:href="#icon-wallet"></use>
+            </svg>
+          </div>
+          <div class="popup__description">You need to connect your wallet first to sign messages and send transaction to Ethereum network</div>
+          <div class="popup__btns"><a class="button popup__button" href="connect-wallet.html">Connect wallet</a>
+            <button class="button-stroke popup__button js-popup-close">Cancel</button>
+          </div>
+        </div>
+        
+        
+      </div>
+      <!-- footer-->
+      <footer class="footer">
+        <div class="footer__center center">
+          <div class="footer__row">
+            <div class="footer__col"><a class="footer__logo" href="index.html"><img class="some-icon" src="img/logo-dark.png" alt="Crypter NFT"><img class="some-icon-dark" src="img/logo-light.png" alt="Crypter NFT"></a>
+              <div class="footer__info">The New Creative Economy.</div>
+              <div class="footer__theme">
+                <div class="footer__details">Dark theme</div>
+                <label class="theme js-theme theme_big">
+                  <input class="theme__input" type="checkbox"/><span class="theme__inner"><span class="theme__box"></span></span>
+                </label>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="footer__group">
+                <div class="footer__head">Crypter.
+                  <svg class="icon icon-arrow-bottom">
+                    <use xlink:href="#icon-arrow-bottom"></use>
+                  </svg>
+                </div>
+                <div class="footer__body">
+                  <div class="footer__menu"><a class="footer__link" href="search01.html">Discover</a><a class="footer__link" href="connect-wallet.html">Connect wallet</a></div>
+                </div>
+              </div>
+              <div class="footer__group">
+                <div class="footer__head">Info
+                  <svg class="icon icon-arrow-bottom">
+                    <use xlink:href="#icon-arrow-bottom"></use>
+                  </svg>
+                </div>
+                <div class="footer__body">
+                  <div class="footer__menu"><a class="footer__link" href="faq.html">FAQ</a><a class="footer__link" href="upload-variants.html">Create item</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="footer__category">Join Newsletter</div>
+              <div class="footer__text">Subscribe our newsletter to get more information</div>
+              <form class="subscription">
+                <input class="subscription__input" type="email" name="email" placeholder="Enter your email" required="required"/>
+                <button class="subscription__btn">
+                  <svg class="icon icon-arrow-next">
+                    <use xlink:href="#icon-arrow-next"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__foot">
+            <div class="footer__copyright">Copyright © 2021 TIME CAR. All rights reserved</div>
+            <div class="footer__note">We use cookies for better service. <a href="/#">Accept</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- scripts-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/slick.min.js"></script>
+    <script src="js/lib/jquery.nice-select.min.js"></script>
+    <script src="js/lib/nouislider.min.js"></script>
+    <script src="js/lib/wNumb.js"></script>
+    <script src="js/lib/jquery.magnific-popup.min.js"></script>
+    <script src="js/lib/jquery.countdown.min.js"></script>
+    <script src="js/lib/share-buttons.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/app.js"></script>
+    <!-- svg sprite-->
+    <div style="display: none"><svg width="0" height="0">
+</svg>
+    </div>
+  </body>
+</html>
